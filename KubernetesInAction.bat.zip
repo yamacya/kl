@@ -1,0 +1,10 @@
+IF EXIST "KubernetesInAction.zip" GOTO ERROR
+COPY /B "KubernetesInAction.000" "KubernetesInAction.zip"
+COPY /B "KubernetesInAction.zip"+"KubernetesInAction.001" "KubernetesInAction.zip"
+COPY /B "KubernetesInAction.zip"+"KubernetesInAction.002" "KubernetesInAction.zip"
+COPY /B "KubernetesInAction.zip"+"KubernetesInAction.003" "KubernetesInAction.zip"
+COPY /B "KubernetesInAction.zip"+"KubernetesInAction.004" "KubernetesInAction.zip"
+GOTO END
+:ERROR
+ECHO KubernetesInAction.zip Ç™ë∂ç›ÇµÇƒÇ¢Ç‹Ç∑ÅB
+:END
